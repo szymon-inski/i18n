@@ -13,8 +13,8 @@ export default function Footer() {
         </p>
 
         <div className={styles.links}>
-          <a href="/privacy-policy">to translate: privacyPolicy</a>
-          <a href="/terms-of-service">to translate: termsOfService</a>
+          <a href="/privacy-policy">{t('privacyPolicy')}</a>
+          <a href="/terms-of-service">{t('termsOfService')}</a>
         </div>
 
         <div className={styles.social}>
@@ -23,21 +23,21 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            to translate: socialMedia.twitter
+            {t('socialMedia.twitter')}
           </a>
           <a
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            to translate: socialMedia.facebook
+            {t('socialMedia.facebook')}
           </a>
           <a
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            to translate: socialMedia.instagram
+            {t('socialMedia.instagram')}
           </a>
         </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
           className={styles.backToTop}
           onClick={() => window.scrollTo(0, 0)}
         >
-          to translate: backToTop
+          {t('backToTop')}
         </button>
       </div>
     </footer>
